@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<style type="text/css">
+.top{
+    width:%100;
+    background-color:#2889FF;
+    height:200px;
+    background-image: url('static/img/home.jpg');
+    }
+    .center {
+    text-align: center;
+    border: 3px solid #2889FF;
+
+
+    }
+    img {
+    display: block;
+    margin: auto;
+    width: 20%;
+}
+  </style>
+</head>
+<body>
+<br/>
+<div class="top" >
+
+</div>
+<div class="center">
+    <form action="/" method="post" style="">
+    <p>
+        <img src="{% if not picUrl %} {%else%}{{picUrl}}{%endif%}" alt="photo" >
+    </p>
+
+    <p>
+        <select name="site" id="site_tipi">
+
+            <option value="instagram">İnstagram</option>
+            <option value="twitter">Twitter</option>
+
+        </select>
+    </p>
+    <p>
+        <input type="text" name="username" id="username" />
+    </p>
+
+    <p>
+        <input type="submit" value="gönder" />
+    </p>
+
+</form>
+
+</div>
+
+
+
+</body>
+</html>
